@@ -11,35 +11,35 @@
 
 ### Advanced Android File Transfer Application for macOS.
 
-Transferring files between macOS and Android or any other MTP devices has always been a nightmare. There are a few File Transfer MTP apps which are available online but most of them are either too expensive or come with bad UI/UX. The official "Android File Transfer" app for macOS from Google comes with bugs, innumerable limitations, some of which include - not being able to transfer files larger than 4GB, frequent disconnections, unable to rename the folders or files on the android/MTP devices. Most of the other apps available online uses either WiFi or ADB protocol to transfer the files, which is an extremely time-consuming process.
+Transferring files between macOS and Android or any other MTP devices has always been a nightmare. There are a few File Transfer MTP apps which are available online but most of them are either too expensive or come with bad UI/UX. The official "Android File Transfer" app for macOS from Google comes with bugs, innumerable limitations, some of which include - not being able to transfer files larger than 4GB, frequent disconnections, unable to rename the folders or files on the android/MTP device. Most of the other apps available online use either Wi-Fi or ADB protocol to transfer the files, which is an extremely time-consuming process.
 
 Countless searches to find an app to solve these problems and failing to find one made me restless. So, I took the leap and decided to create an app for us that could help us have a smooth and hassle-free file transfer process from macOS to Android/MTP devices. Created with the objective of giving back to the community, we can all use this app for free in this lifetime.
 
 ### Features
 
 - Safe, Transparent and Open-Source
-- Plug and Play via USB. No hassles, easy and instant connection.
+- Plug and Play via USB. No hassles, easy and instant connection
 - Select between Internal Memory and SD Card
-- Transfer multiple files which are larger than 4GB
+- Transfer multiple files, which can be larger than 4GB
 - Dark mode
 - Drag-and-drop support
 - Split pane views for both Local Computer and Android device
-- Choose between Grid and List view.
-- Use Keyboard Shortcuts to navigate through your files.
-- No collection of personally identifiable information.
+- Choose between Grid and List view
+- Use Keyboard Shortcuts to navigate through your files
+- No collection of personally identifiable information
 
 ### Kalam Kernel
 
-OpenMTP 3.0 features a new MTP kernel and it was written from the scratch. It promises a file copy speed of 30 to 40 MB/s on low and mid range devices and 100 to 120 MB/s on higher end devices. The all new and powerful MTP kernel is named after [Dr. A. P. J. Abdul Kalam](https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam 'Dr. A. P. J. Abdul Kalam')
+OpenMTP 3.0 features a new MTP kernel and it was written from scratch. It promises a file copy speed of 30 to 40 MB/s on low and mid range devices and 100 to 120 MB/s on higher end devices. The all new and powerful MTP kernel is named after [Dr. A. P. J. Abdul Kalam](https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam 'Dr. A. P. J. Abdul Kalam')
 
-Do checkout the Go package which I've written to build Kalam Kernel: [github.com/ganeshrvel/go-mtpx](https://github.com/ganeshrvel/go-mtpx 'https://github.com/ganeshrvel/go-mtpx'). Feel free to raise PRs.
+Check out the Go package which I've written to build Kalam Kernel: [github.com/ganeshrvel/go-mtpx](https://github.com/ganeshrvel/go-mtpx 'https://github.com/ganeshrvel/go-mtpx'). Feel free to raise PRs.
 
 ### System Requirements and Support
 
-- To support macOS version below Big Sur the Kalam kernel needs to be compiled on an older macOS machine everytime there is an update, which is practically very difficult
-- Only the latest 3 versions of macOS will receive the `Kalam` Kernel updates, which includes new device supports, fixes, stability improvements. macOS Big Sur (11.0) or above will receive the above said updates
-- We have now officially retired the support for `Kalam` Kernel on macOS 10.13 (OS X El High Sierra) and lower. Only the "Legacy" MTP mode will continue working on these outdated machines.
-- We will continue releasing the updates for both `Intel` and `ARM64` machines
+- To support macOS versions below Big Sur the Kalam kernel needs to be compiled on an older macOS machine every time there is an update, which practically is very difficult
+- Only the latest 3 versions of macOS will receive the `Kalam` Kernel updates, which includes new device support, fixes, stability improvements. macOS Big Sur (11.0) or above will receive the above updates
+- We have now officially retired the support for `Kalam` Kernel on macOS 10.13 (OS X High Sierra) and lower. Only the "Legacy" MTP mode will continue working on these outdated machines
+- We will continue releasing updates for both `Intel` and `ARM64` machines
 
 ### Installation
 
@@ -54,7 +54,7 @@ Do checkout the Go package which I've written to build Kalam Kernel: [github.com
   brew cask install openmtp
 ```
 
-- Find the latest _dmg_ file from [GitHub Releases](https://github.com/ganeshrvel/openmtp/releases 'GitHub Releases')
+- Find the latest _dmg_ file in the [GitHub Releases](https://github.com/ganeshrvel/openmtp/releases 'GitHub Releases')
 
 ### Screengrabs
 
@@ -71,7 +71,7 @@ Do checkout the Go package which I've written to build Kalam Kernel: [github.com
 | Copy                                              | <kbd>command (⌘)</kbd>+<kbd>c</kbd>                                          |
 | Copy to Queue                                     | <kbd>command (⌘)</kbd>+<kbd>shift</kbd>+<kbd>c</kbd>                         |
 | Paste                                             | <kbd>command (⌘)</kbd>+<kbd>v</kbd>                                          |
-| Refresh                                           | <kbd>command (⌘)</kbd> +<kbd>r</kbd>                                         |
+| Refresh                                           | <kbd>command (⌘)</kbd>+<kbd>r</kbd>                                         |
 | Folder Up                                         | <kbd>command (⌘)</kbd>+<kbd>b</kbd>                                          |
 | Select All                                        | <kbd>command (⌘)</kbd>+<kbd>a</kbd>                                          |
 | Rename                                            | <kbd>command (⌘)</kbd>+<kbd>d</kbd>                                          |
@@ -166,17 +166,17 @@ $ "/path/to/OpenMTP.app/Contents/MacOS/OpenMTP" --remote-debugging-port=6363
       - Keychain -> `Default Keychains` menu in the left -> Login -> My Certificates
       - Search for `Developer ID Application` in the top search bar
         - If there are no results for the `Developer ID Application`, for the organization, create one from here: [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/add)
-        - Follow these steps to get the Apple Developer certificated installed in the local machine [Obtaining-an-Apple-Developer-ID-Certificate-for-macOS-Provisioning](https://forums.ivanti.com/s/article/Obtaining-an-Apple-Developer-ID-Certificate-for-macOS-Provisioning?language=en_US&ui-force-components-controllers-recordGlobalValueProvider.RecordGvp.getRecord=1)
+        - Follow these steps to get the Apple Developer certifcate installed on the local machine [Obtaining-an-Apple-Developer-ID-Certificate-for-macOS-Provisioning](https://forums.ivanti.com/s/article/Obtaining-an-Apple-Developer-ID-Certificate-for-macOS-Provisioning?language=en_US&ui-force-components-controllers-recordGlobalValueProvider.RecordGvp.getRecord=1)
       - Search for `Developer ID Application` in the top search bar
       - Expand `Developer ID Application: <User Name> (XXXYYYZZZ)`
       - See if the private key's name matches this: `Mac Developer ID Application: <User Name>`
-        - Else rename the private key as (right click -> get info) `Mac Developer ID Application: <User Name>`
+        - Otherwise rename the private key as (right click -> get info) `Mac Developer ID Application: <User Name>`
         - Close the window
       - Right Click on the private key -> `Mac Developer ID Application: <User Name>`
       - Export `Mac Developer ID Application: <User Name>`
       - File name: `CERTIFICATE_PRIVATE_KEY.p12`
       - Enter Password. This is the `CSC_KEY_PASSWORD`, note this down
-      - Run (this step doesnt work if you are using fig or ohmyzsh, use raw terminal):
+      - Run (this step doesn't work if you are using fig or ohmyzsh, use raw terminal):
         - `base64 -i CERTIFICATE_PRIVATE_KEY.p12 -o CERTIFICATE_PRIVATE_KEY.txt`
       - Copy the whole content of the file `CERTIFICATE_PRIVATE_KEY.txt`
       - Paste the content as the value for the field `CSC_LINK`
@@ -197,7 +197,7 @@ $ "/path/to/OpenMTP.app/Contents/MacOS/OpenMTP" --remote-debugging-port=6363
 
 ### Packaging (locally) and Publishing
 
-Setup the _code signing_ to build, package (locally) and publish the app.
+Set up the _code signing_ to build, package (locally) and publish the app.
 
 **App Notarization for macOS** (skip this section for non macOS builds)
 
@@ -225,7 +225,7 @@ npm install -g @sentry/wizard
 sentry-wizard --integration electron
 
 # Upload Debug Information
-# Everytime the electron.js version is upgraded run:
+# Every time the electron.js version is upgraded run:
 node sentry-symbols.js
 
 sentry-cli login
@@ -298,12 +298,12 @@ $ set UPGRADE_EXTENSIONS=1 && npm run dev
   - Add the ignorePlugin line to `default.plugins` in the file `webpack/config.base.js`
     - `new webpack.IgnorePlugin({ resourceRegExp: /^(node-mac-permissions)$/u }),`
   - WARNING: **DO NOT commit** these changes to the upstream!!
-- The `NODE_MAC_PERMISSIONS_MIN_OS` constant defines the minimum os version that is required to show the macos usage access permission popup
+- The `NODE_MAC_PERMISSIONS_MIN_OS` constant defines the minimum OS version that is required to show the macos usage access permission popup
 - For distribution make sure to build the app on a machine which is at least 10.15 (Catalina)
 
 [https://stackoverflow.com/questions/58358449/notarizing-electron-apps-throws-you-must-first-sign-the-relevant-contracts-on](https://stackoverflow.com/questions/58358449/notarizing-electron-apps-throws-you-must-first-sign-the-relevant-contracts-on 'https://stackoverflow.com/questions/58358449/notarizing-electron-apps-throws-you-must-first-sign-the-relevant-contracts-on')
 
-- Raise an issue if your device is undetected: https://github.com/ganeshrvel/openmtp/issues/new?template=contribute.md
+- Raise an issue if your device is not detected: https://github.com/ganeshrvel/openmtp/issues/new?template=contribute.md
 
 #### The app goes blank while trying to connect a Samsung device
 
@@ -321,7 +321,7 @@ $ set UPGRADE_EXTENSIONS=1 && npm run dev
 
 ### Credits
 
-- A special thanks to [CodeMagic](http://codemagic.io/ 'Codemagic - CI/CD') and [Kevin Suhajda](https://www.linkedin.com/in/kevinsuhajda 'Kevin Suhajda') for sponsoring their CI/CD VMs, thus making the app releases more streamlined and much easier now. 🎊🎊 Do checkout their [products](https://codemagic.io/integrations 'Codemagic - integrations') section for more.
+- A special thanks to [CodeMagic](http://codemagic.io/ 'Codemagic - CI/CD') and [Kevin Suhajda](https://www.linkedin.com/in/kevinsuhajda 'Kevin Suhajda') for sponsoring their CI/CD VMs, thus making the app releases more streamlined and much easier now. 🎊🎊 Check out their [products](https://codemagic.io/integrations 'Codemagic - integrations') section for more.
 
 - Special shoutout to [@CodyJung](https://github.com/CodyJung 'CodyJung') for adding the [Fujifilm](https://github.com/ganeshrvel/go-mtpfs/pull/2) and [Garmin](https://github.com/ganeshrvel/go-mtpfs/pull/1) devices support. 🔥🔥
 
